@@ -32,24 +32,24 @@ public class Airliner {
         int numberSeatsEconomyClass2 = 180;
         int numberSeatBusinessClass = 28;
 
-        PrintAirplaneInfo(aircraftType1, aircraftModel1);
-        PrintAirplaneInfo(aircraftType2, aircraftModel2, numberSeatsEconomyClass1);
-        PrintAirplaneInfo(aircraftType2, aircraftModel3, numberSeatsEconomyClass2, numberSeatBusinessClass);
+        printAirplaneInfo(aircraftType1, aircraftModel1);
+        printAirplaneInfo(aircraftType2, aircraftModel2, numberSeatsEconomyClass1);
+        printAirplaneInfo(aircraftType2, aircraftModel3, numberSeatsEconomyClass2, numberSeatBusinessClass);
 
 
     }
 
-    public static void PrintAirplaneInfo(String Type, String Model) {
-        System.out.println("Aircraft type : " + Type + ", model : " + Model);
+    public static void printAirplaneInfo(String type, String model) {
+        System.out.println("Aircraft type : " + type + ", model : " + model);
     }
 
-    public static void PrintAirplaneInfo(String Type, String Model, int SeatsEconom) {
-        System.out.println("Aircraft type : " + Type + ", model : " + Model + ", number of economy class passengers : " + SeatsEconom);
+    public static void printAirplaneInfo(String type, String model, int seatsEconom) {
+        System.out.println("Aircraft type : " + type + ", model : " + model + ", number of economy class passengers : " + seatsEconom);
 
     }
 
-    public static void PrintAirplaneInfo(String Type, String Model, int SeatsEconom, int StatsBusiness) {
-        System.out.println("Aircraft type : " + Type + ", model : " + Model + ", number of economy class passengers : " + SeatsEconom + ", number of business class passengers : " + StatsBusiness);
+    public static void printAirplaneInfo(String type, String model, int seatsEconom, int statsBusiness) {
+        System.out.println("Aircraft type : " + type + ", model : " + model + ", number of economy class passengers : " + seatsEconom + ", number of business class passengers : " + statsBusiness);
     }
 
 }

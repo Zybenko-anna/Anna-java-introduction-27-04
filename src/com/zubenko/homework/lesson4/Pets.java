@@ -17,28 +17,28 @@ public class Pets {
         System.out.println("Enter the number of dogs, cats, food serving size, price of a meal");
         int dogs = scanner.nextInt();
         int cats = scanner.nextInt();
-        int size = scanner.nextInt();
-        int price = scanner.nextInt();
+        int portionSize = scanner.nextInt();
+        int pricePortion = scanner.nextInt();
         int month = 30;
         int perDay = 3;
         int kg = 1000;
 
-        int CatFood = nutritionСalculator(size, perDay, month);
-        System.out.println("Cat food requirement per month is " + CatFood * cats / kg + " kg");
+        int catFood = nutritionСalculator(portionSize, perDay, month);
+        System.out.println("Cat food requirement per month is " + catFood * cats / kg + " kg");
 
-        int DogFood = nutritionСalculator(size, perDay, month);
-        System.out.println("Dog food requirement per month is " + DogFood * dogs / kg + " kg");
+        int dogFood = nutritionСalculator(portionSize, perDay, month);
+        System.out.println("Dog food requirement per month is " + dogFood * dogs / kg + " kg");
 
-        int PriceShelter = priceСalculator(dogs, cats, perDay, month, price);
-        System.out.println("Maintenance of the shelter per month is " + PriceShelter + " in dollars");
+        int priceShelter = priceСalculator(dogs, cats, perDay, month, pricePortion);
+        System.out.println("Maintenance of the shelter per month is " + priceShelter + " in dollars");
 
     }
 
-    public static int nutritionСalculator(int size, int perDay, int month) {
-        return size * perDay * month;
+    public static int nutritionСalculator(int portionSize, int perDay, int month) {
+        return portionSize * perDay * month;
     }
 
-    public static int priceСalculator(int dogs, int cats, int perDay, int month, int price) {
-        return (dogs + cats) * perDay * month * price;
+    public static int priceСalculator(int dogs, int cats, int perDay, int month, int pricePortion) {
+        return (dogs + cats) * perDay * month * pricePortion;
     }
 }
