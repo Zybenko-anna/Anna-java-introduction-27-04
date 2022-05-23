@@ -22,7 +22,7 @@ public class CarwashWhile {
             dryStage(numberOfCars);
             numberOfCars--;
         }
-        while (numberOfCars == 0);
+        while (numberOfCars > 0);
     }
 
 
