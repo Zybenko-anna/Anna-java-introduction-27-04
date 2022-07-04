@@ -1,4 +1,4 @@
-package com.zubenko.homework.lesson14;
+package com.zubenko.homework.algoritmy;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
